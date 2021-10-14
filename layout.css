@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 400px;
+    background-color: gainsboro;
+    color: black;
+    line-height: 2rem;
+    border: solid black 0.2rem;
+    border-radius: 0.3rem;
+    margin: 2rem;
+
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.container .heading {
+    float: right;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+
+.container .text {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+
+.container figure img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: solid white 0.3rem;
+    box-shadow: darkgrey 3px;
+    max-width: 100%;
+    box-shadow: 0 3px 3px 0;
+}
+
+.clearfix {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.container .text p {
+    padding: 1rem;
+}
+
+.container .heading h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.reverse {
+    padding: 1rem;
+}
+
+.reverse .heading {
+    float: left;
+}
+
+.reverse figure img {
+    float: right;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+
+@media screen and (max-width: 425px) {
+    body {
+      margin: 0;
+    }
+    .container {
+        max-width: 100%;
+        min-width: 320px;
+        padding: 10px;
+    }
+  }
+@media screen and (min-width: 769px) {
+    body {
+      margin: 0;
+    }
+    .container {
+        max-width: 100%;
+        min-width: 320px;
+        padding: 10px;
+    }
+  }
